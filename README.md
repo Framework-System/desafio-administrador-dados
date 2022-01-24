@@ -29,9 +29,7 @@ Algumas coisas importantes a serem observadas antes de começar:
 
 ### Code Challenge
 
-1\. Integridade dos dados: Verificação e limpeza
-
-- Liste em ordem alfabética todos os códigos de país na tabela continente_map que aparecem mais de uma vez. Exiba quaisquer valores em que country_code seja nulo como country_code = "FOO" e faça com que essa linha apareça primeiro na lista, mesmo que ela deva ser classificada em ordem alfabética no meio. Forneça os resultados desta consulta como sua resposta.
+1\. Integridade dos dados: limpeza
 
 - Para todos os países que possuem várias linhas na tabela continente_map, exclua todos os vários registros deixando apenas 1 registro por país. O registro que você mantém deve ser o primeiro quando classificado pelo continente_code em ordem alfabética crescente. Forneça as consultas e as explicações das etapas que você seguiu para excluir esses registros.
 
@@ -49,39 +47,13 @@ A lista deve incluir as colunas:
 
 3\. Para o ano de 2012, crie um relatório de 3 colunas e 1 linha mostrando a porcentagem de participação de gdp_per_capita para as seguintes regiões:
 
-(i) Ásia, (ii) Europa, (iii) o Resto do mundo. Seu resultado deve ser algo como:
+(1) Ásia, (2) Europa, (3) o Resto do mundo. Seu resultado deve ser algo como:
 
  Asia  | Europe | Rest of World 
 ------ | ------ | -------------
 25.0%  | 25.0%  | 50.0%
 
-4a\. Qual é a contagem de países e a soma de seus valores gdp_per_capita relacionados para o ano de 2007 em que a string 'an' (não diferenciar maiúsculas de minúsculas) aparece em qualquer lugar no nome do país?
-
-4b\. Repita a pergunta 4a, mas desta vez torne a consulta sensível a maiúsculas e minúsculas.
-
-5\. Encontre a soma de gdp_per_capita por ano e a contagem de países para cada ano que tem pib per capita (gdp_per_capita) não nulo onde (1) o ano é anterior a 2012 e (2) o país tem o gdp_per_capita nulo em 2012. Seu resultado deve ter as colunas:
-
-- year
-- country_count
-- sum_gdp_per_capita
-
-6\. Em uma única consulta, execute todas as etapas abaixo e forneça os resultados como sua resposta final:
-
-a. crie lista única de todos os registros per_capita para o ano de 2009 que inclua colunas:
-
-- continent_name
-- country_code
-- country_name
-- gdp_per_capita
-
-b. ordene esta lista por:
-
-- continent_name de forma ascendente
-- caracteres de 2 a 4 do country_name de forma descendente
-
-c. crie um total de gdp_per_capita por continente_name
-
-7\. Encontre o país com a maior média de gdp_per_capita para cada continente em todos os anos. Agora compare sua lista com o seguinte conjunto de dados. Descreva todos e quaisquer erros que você possa encontrar com o conjunto de dados abaixo. Inclua qualquer código usado para ajudar a detectar esses erros.
+4\. Encontre o país com a maior média de gdp_per_capita para cada continente em todos os anos. Agora compare sua lista com o seguinte conjunto de dados. Descreva todos e quaisquer erros que você possa encontrar com o conjunto de dados abaixo. Inclua qualquer código usado para ajudar a detectar esses erros.
 
 rank | continent_name | country_code | country_name | avg_gdp_per_capita 
 ---- | -------------- | ------------ | ------------ | -----------------
