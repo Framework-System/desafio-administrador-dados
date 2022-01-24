@@ -24,6 +24,7 @@ Algumas coisas importantes a serem observadas antes de começar:
 - Forneça todo o código, incluindo o que você usou para criar o banco de dados e importar os dados, e as respostas relacionadas a cada pergunta imediatamente abaixo da pergunta.
 - Sinta-se à vontade para deixar muitos comentários para nos ajudar a entender seu trabalho.
 - Quando estiver pronto, responda a este e-mail e anexe seus resultados.
+- A otimização das consultas serão levadas em consideração.
 - *GDP* == *PIB*
 
 ### Code Challenge
