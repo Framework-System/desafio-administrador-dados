@@ -20,7 +20,6 @@ Algumas coisas importantes a serem observadas antes de começar:
 - Use o banco de dados para responder às seguintes perguntas.
 - Todas as respostas que retornam valores monetários devem ser arredondadas para 2 casas decimais e precedidas do símbolo "$" (por exemplo, "$1432,10").
 - Todas as respostas que retornam valores percentuais devem estar entre -100,00 e 100,00, arredondadas para 2 casas decimais e seguidas do símbolo "%" (por exemplo, "58,30%").
-- Copie e cole as perguntas da seção abaixo em um novo arquivo .txt simples chamado: {firstname}_{lastname}_code_challenge.txt (por exemplo, "john_smith_code_challenge.txt").
 - Fornecer todos os resultados do seu trabalho como respostas; não podemos avaliar seu trabalho sem os resultados da sua consulta!
 - Forneça todo o código, incluindo o que você usou para criar o banco de dados e importar os dados, e as respostas relacionadas a cada pergunta imediatamente abaixo da pergunta.
 - Sinta-se à vontade para deixar muitos comentários para nos ajudar a entender seu trabalho.
