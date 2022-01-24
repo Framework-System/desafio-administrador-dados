@@ -1,49 +1,45 @@
-### Introduction
+### Introdução
 
 Bem-vindo ao Desafio de Código da Framework!
 
-This is an opportunity for you to show us your grasp of SQL which plays a key role in the day-to-day job that you're applying for. All members of the Framework Data team have taken this challenge and participated in its creation. If you feel that there are any questions that are either not fair or not clear, please do let us know; this is VERY important to us!
+Essa é uma oportunidade para você mostrar sua pegada 
 
-A few important things to note before you get started:
+Esta é uma oportunidade para você nos mostrar sua compreensão do SQL, que desempenha um papel fundamental no trabalho do dia-a-dia para o qual você está se candidatando. Todos os membros da equipe do Framework Data aceitaram esse desafio e participaram de sua criação. Se você achar que há perguntas que não são justas ou não são claras, por favor nos avise; Isso é muito importante para nós!
 
-- All work should be done in SQL. Any variant is fine (e.g. MS SQL, Postgres, MySQL, etc.). If you normally use R, SAS, or other similar tools with SQL it's important that you show that you can work in SQL by itself to produce the correct answers to this challenge.
-- If you are confused by a specific question, you can request clarification by replying to the message that this challenge was attached to. This is NOT intended for you to obtain technical help with solving the problems on this challenge or asking for hints; it should only be used for question clarification.
-- This challenge is due back within 1 week (7 calendar days) of being sent to you.
-- If you cannot answer a question, please do your best, show your work, leave comments, and let us know your general thoughts.
-- We are interested in BOTH your answers and the work/code that you write to get them. Please leave plenty of comments for us to read when we review your work.
-- There are some blank/null values in this set. That's how we found it and it reflects the nature of imperfect data. Please work with this and provide explanations of any issues or workarounds required to arrive at your answers.
-- There are no intentional gotchas, trick questions, or traps; the challenge is intended to demonstrate some of the typical day-to-day SQL skills that the job requires.
-- Some of these questions may seem nonsensical and you may find yourself asking, "why would anyone want to know that?!" They are intended purely as a measure of your SQL skills and _not_ as actual questions that we would expect to ask of this type of data set. Please take them with a grain of salt.
+Algumas coisas importantes a serem observadas antes de começar:
 
-We will review all code submissions and get back to you within 1 week of submission.
+- Se você não puder responder a uma pergunta, faça o seu melhor, mostre seu trabalho, deixe comentários e deixe-nos saber seus pensamentos gerais.
+- Estamos interessados em suas respostas e no trabalho/código que você escreve para obtê-las. Por favor, deixe muitos comentários para nós lermos quando revisarmos seu trabalho.
+- Existem alguns valores em branco/nulos neste conjunto. Foi assim que o encontramos e reflete a natureza dos dados imperfeitos. Trabalhe com isso e forneça explicações sobre quaisquer problemas ou soluções alternativas necessárias para chegar às suas respostas.
+- Não há pegadinhas intencionais, perguntas capciosas ou armadilhas; o desafio visa demonstrar algumas das habilidades típicas de SQL do dia-a-dia que o trabalho exige.
+- Algumas dessas perguntas podem parecer sem sentido e você pode se perguntar: "por que alguém iria querer saber isso?!" Eles são destinados puramente como uma medida da suas habilidades de SQL e não como perguntas reais que esperaríamos fazer a esse tipo de conjunto de dados.
 
-Finally, this is NOT an MS Excel/spreadsheet exercise. Excel is an important data tool that we regularly use. It could even feasibly be used to answer all of these questions. However, this is meant to measure your technical abilities with SQL.
+### Instruções
 
-### Instructions
+- Crie um banco de dados SQL usando os arquivos CSV em anexo.
+- Use o banco de dados para responder às seguintes perguntas.
+- Todas as respostas que retornam valores monetários devem ser arredondadas para 2 casas decimais e precedidas do símbolo "$" (por exemplo, "$1432,10").
+- Todas as respostas que retornam valores percentuais devem estar entre -100,00 e 100,00, arredondadas para 2 casas decimais e seguidas do símbolo "%" (por exemplo, "58,30%").
+- Copie e cole as perguntas da seção abaixo em um novo arquivo .txt simples chamado: {firstname}_{lastname}_code_challenge.txt (por exemplo, "john_smith_code_challenge.txt").
+- Fornecer todos os resultados do seu trabalho como respostas; não podemos avaliar seu trabalho sem os resultados da sua consulta!
+- Forneça todo o código, incluindo o que você usou para criar o banco de dados e importar os dados, e as respostas relacionadas a cada pergunta imediatamente abaixo da pergunta.
+- Sinta-se à vontade para deixar muitos comentários para nos ajudar a entender seu trabalho.
+- Quando estiver pronto, responda a este e-mail e anexe seus resultados.
+- *GDP* == *PIB*
 
-- Create a SQL database using the attached CSV files.
-- Use the database to answer the following questions.
-- All answers that return money values should be rounded to 2 decimal points and preceded by the "$" symbol (e.g. "$1432.10").
-- All answers that return percent values should be between -100.00 to 100.00, rounded to 2 decimal points and followed by the "%" symbol (e.g. "58.30%").
-- Copy & paste the questions from the section below into a new plain .txt file named: {firstname}_{lastname}_code_challenge.txt (e.g. "john_smith_code_challenge.txt").
-- Provide all of the results of your work as answers; we cannot evaluate your work without your query results!
-- Provide all code, including what you used to create the database and import data, and answers related to each question immediately below the question.
-- Feel free to leave lots of notes/comments to help us understand your work.
-- When you are ready, reply to this email and attach your results.
- 
-### Code Challenge v2.11
+### Code Challenge
 
-1\. Data Integrity Checking & Cleanup
+1\. Integridade dos dados: Verificação e limpeza
 
-- Alphabetically list all of the country codes in the continent_map table that appear more than once. Display any values where country_code is null as country_code = "FOO" and make this row appear first in the list, even though it should alphabetically sort to the middle. Provide the results of this query as your answer.
+- Liste em ordem alfabética todos os códigos de país na tabela continente_map que aparecem mais de uma vez. Exiba quaisquer valores em que country_code seja nulo como country_code = "FOO" e faça com que essa linha apareça primeiro na lista, mesmo que ela deva ser classificada em ordem alfabética no meio. Forneça os resultados desta consulta como sua resposta.
 
-- For all countries that have multiple rows in the continent_map table, delete all multiple records leaving only the 1 record per country. The record that you keep should be the first one when sorted by the continent_code alphabetically ascending. Provide the query/ies and explanation of step(s) that you follow to delete these records.
+- Para todos os países que possuem várias linhas na tabela continente_map, exclua todos os vários registros deixando apenas 1 registro por país. O registro que você mantém deve ser o primeiro quando classificado pelo continente_code em ordem alfabética crescente. Forneça as consultas e as explicações das etapas que você seguiu para excluir esses registros.
 
-2\. List the countries ranked 10-12 in each continent by the percent of year-over-year growth descending from 2011 to 2012.
+2\. Liste os países que tiveram crescimento de 10 a 12 por cento entre os anos de 2011 a 2012.
 
-The percent of growth should be calculated as: ((2012 gdp - 2011 gdp) / 2011 gdp)
+O percentual de crescimento deve ser calculado como: ((PIB de 2012 - PIB de 2011) / PIB de 2011)
 
-The list should include the columns:
+A lista deve incluir as colunas:
 
 - rank
 - continent_name
@@ -51,49 +47,41 @@ The list should include the columns:
 - country_name
 - growth_percent
 
-3\. For the year 2012, create a 3 column, 1 row report showing the percent share of gdp_per_capita for the following regions:
+3\. Para o ano de 2012, crie um relatório de 3 colunas e 1 linha mostrando a porcentagem de participação de gdp_per_capita para as seguintes regiões:
 
-(i) Asia, (ii) Europe, (iii) the Rest of the World. Your result should look something like
+(i) Ásia, (ii) Europa, (iii) o Resto do mundo. Seu resultado deve ser algo como:
 
  Asia  | Europe | Rest of World 
 ------ | ------ | -------------
 25.0%  | 25.0%  | 50.0%
 
-4a\. What is the count of countries and sum of their related gdp_per_capita values for the year 2007 where the string 'an' (case insensitive) appears anywhere in the country name?
+4a\. Qual é a contagem de países e a soma de seus valores gdp_per_capita relacionados para o ano de 2007 em que a string 'an' (não diferenciar maiúsculas de minúsculas) aparece em qualquer lugar no nome do país?
 
-4b\. Repeat question 4a, but this time make the query case sensitive.
+4b\. Repita a pergunta 4a, mas desta vez torne a consulta sensível a maiúsculas e minúsculas.
 
-5\. Find the sum of gpd_per_capita by year and the count of countries for each year that have non-null gdp_per_capita where (i) the year is before 2012 and (ii) the country has a null gdp_per_capita in 2012. Your result should have the columns:
+5\. Encontre a soma de gdp_per_capita por ano e a contagem de países para cada ano que tem pib per capita (gdp_per_capita) não nulo onde (1) o ano é anterior a 2012 e (2) o país tem o gdp_per_capita nulo em 2012. Seu resultado deve ter as colunas:
 
 - year
 - country_count
-- total
+- sum_gdp_per_capita
 
-6\. All in a single query, execute all of the steps below and provide the results as your final answer:
+6\. Em uma única consulta, execute todas as etapas abaixo e forneça os resultados como sua resposta final:
 
-a. create a single list of all per_capita records for year 2009 that includes columns:
-
-- continent_name
-- country_code
-- country_name
-- gdp_per_capita
-
-b. order this list by:
-
-- continent_name ascending
-- characters 2 through 4 (inclusive) of the country_name descending
-
-c. create a running total of gdp_per_capita by continent_name
-
-d. return only the first record from the ordered list for which each continent's running total of gdp_per_capita meets or exceeds $70,000.00 with the following columns:
+a. crie lista única de todos os registros per_capita para o ano de 2009 que inclua colunas:
 
 - continent_name
 - country_code
 - country_name
 - gdp_per_capita
-- running_total
 
-7\. Find the country with the highest average gdp_per_capita for each continent for all years. Now compare your list to the following data set. Please describe any and all mistakes that you can find with the data set below. Include any code that you use to help detect these mistakes.
+b. ordene esta lista por:
+
+- continent_name de forma ascendente
+- caracteres de 2 a 4 do country_name de forma descendente
+
+c. crie um total de gdp_per_capita por continente_name
+
+7\. Encontre o país com a maior média de gdp_per_capita para cada continente em todos os anos. Agora compare sua lista com o seguinte conjunto de dados. Descreva todos e quaisquer erros que você possa encontrar com o conjunto de dados abaixo. Inclua qualquer código usado para ajudar a detectar esses erros.
 
 rank | continent_name | country_code | country_name | avg_gdp_per_capita 
 ---- | -------------- | ------------ | ------------ | -----------------
